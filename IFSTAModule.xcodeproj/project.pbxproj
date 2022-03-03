@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E4CD114527D07F19006A3D76 /* IFSTAModule.h in Headers */ = {isa = PBXBuildFile; fileRef = E4CD114427D07F19006A3D76 /* IFSTAModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4CD114D27D07F47006A3D76 /* TestClassVamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CD114C27D07F47006A3D76 /* TestClassVamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4CD114127D07F19006A3D76 /* IFSTAModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IFSTAModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CD114427D07F19006A3D76 /* IFSTAModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFSTAModule.h; sourceTree = "<group>"; };
+		E4CD114C27D07F47006A3D76 /* TestClassVamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClassVamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +47,18 @@
 		E4CD114327D07F19006A3D76 /* IFSTAModule */ = {
 			isa = PBXGroup;
 			children = (
+				E4CD114B27D07F36006A3D76 /* ExamPrep */,
 				E4CD114427D07F19006A3D76 /* IFSTAModule.h */,
 			);
 			path = IFSTAModule;
+			sourceTree = "<group>";
+		};
+		E4CD114B27D07F36006A3D76 /* ExamPrep */ = {
+			isa = PBXGroup;
+			children = (
+				E4CD114C27D07F47006A3D76 /* TestClassVamp.swift */,
+			);
+			path = ExamPrep;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +104,7 @@
 				TargetAttributes = {
 					E4CD114027D07F19006A3D76 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CD114D27D07F47006A3D76 /* TestClassVamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		E4CD114927D07F19006A3D76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +303,7 @@
 		E4CD114A27D07F19006A3D76 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
