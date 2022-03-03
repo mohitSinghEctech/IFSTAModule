@@ -47,18 +47,10 @@
 		E4CD114327D07F19006A3D76 /* IFSTAModule */ = {
 			isa = PBXGroup;
 			children = (
-				E4CD114B27D07F36006A3D76 /* ExamPrep */,
+				E4CD114C27D07F47006A3D76 /* TestClassVamp.swift */,
 				E4CD114427D07F19006A3D76 /* IFSTAModule.h */,
 			);
 			path = IFSTAModule;
-			sourceTree = "<group>";
-		};
-		E4CD114B27D07F36006A3D76 /* ExamPrep */ = {
-			isa = PBXGroup;
-			children = (
-				E4CD114C27D07F47006A3D76 /* TestClassVamp.swift */,
-			);
-			path = ExamPrep;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
